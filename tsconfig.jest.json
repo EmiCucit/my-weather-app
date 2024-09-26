@@ -1,0 +1,8 @@
+{
+    "extends": "./tsconfig.app.json",
+    "compilerOptions": {
+      "jsx": "react-jsx", 
+      "lib": ["ES2020", "DOM", "DOM.Iterable"]
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx", "__test__/**/*.test.tsx", "__test__/**/*.test.ts", "setupTests.ts"]
+  }
