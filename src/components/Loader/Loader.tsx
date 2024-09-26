@@ -3,7 +3,7 @@ import { Box, keyframes, styled } from "@mui/material";
 
 const StyledBox = styled(Box)`
   width: 100%;
-  height: 29rem;
+  height: 28.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

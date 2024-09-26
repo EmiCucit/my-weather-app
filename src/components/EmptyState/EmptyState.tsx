@@ -24,7 +24,7 @@ const StyledBox = styled(Box)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 25rem;
+  height: 28.75rem;
   gap: 2rem;
   text-align: center;
 `;

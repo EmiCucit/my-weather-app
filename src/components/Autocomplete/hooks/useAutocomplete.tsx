@@ -29,8 +29,8 @@ const useAutocomplete = () => {
     setOpen(true);
   };
 
-  const { fetchWeather, weatherData, loading: isLoadingWeather, error: weatherError } = useWeather();
-  const { fetchForecast, forecastData, loading: isLoadingForecast, error: forecastError } = useForecast();
+  const { fetchWeather, weatherData, error: weatherError } = useWeather();
+  const { fetchForecast, forecastData, error: forecastError } = useForecast();
   
   useEffect(() => {
     if (!auxCity) return;
@@ -73,8 +73,6 @@ const useAutocomplete = () => {
     open,
     handleSelection,
     filterOptions,
-    isLoadingWeather,
-    isLoadingForecast,
     handleOpen,
     handleClose,
   };
