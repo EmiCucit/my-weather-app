@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+My Weather App
+Esta es una aplicación del clima construida con React, Vite y TypeScript. La aplicación utiliza la API de OpenWeatherMap para obtener información sobre el clima y las predicciones meteorológicas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Herramientas Utilizadas
+Este proyecto ha sido desarrollado utilizando las siguientes herramientas y librerías:
 
-Currently, two official plugins are available:
+-React 
+-@emotion/react 
+-@emotion/styled 
+-MUI (Material UI) 
+-@reduxjs/toolkit 
+-React Redux 
+-Axios 
+-Day.js 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*Dependencias de Desarrollo:
+-TypeScript 
+-Vite
+-Jest
+-@testing-library/react
+-@testing-library/jest-dom
+-ESLint 
+-ts-jest 
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Instrucciones para levantar el proyecto en local
+Para iniciar el proyecto en tu máquina local, sigue estos pasos:
 
-- Configure the top-level `parserOptions` property like this:
+-Clonar este repositorio
+-Instalar las dependendencias: npm install
+-Correr el proyecto: npm run dev
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Siguiendo estos simples pasos tendremos el proyecto disponible en:
+http://localhost:5173
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Y si queres verlo en una URL de producción podes entrar aca: 
+https://my-weather-app-chi-five.vercel.app/
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
